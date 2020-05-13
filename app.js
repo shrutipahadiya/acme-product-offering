@@ -33,8 +33,7 @@ const renderProducts = (products, companies, offerings, mult) => {
 
       const finalOffer = [];
 
-      offers
-        .map((offer) => {
+      offers .map((offer) => {
           companies.map((comp) => {
             if (comp.id === offer.companyId) {
               finalOffer.push(
